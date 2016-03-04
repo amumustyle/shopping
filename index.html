@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html >
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>电子商务</title>
+<title>首页</title>
 <!--引入开始-->
 <script src="js/lun.js"></script>
 <link rel="stylesheet" href="css/global.css">
@@ -11,58 +11,47 @@
 <style>
 
 	*{margin:0; padding:0;}
-	ul li{list-style:none; }
+	
 	body{ background:#fff;font:14px "Microsoft YaHei","宋体",Arial,sans-serif;}
 	img{ border:0;}
-	a{ text-decoration:none; color:#666;}	
+	
 </style>
 
 </head>	
 <body>
-<div class="b">
-    <table class="tou">
-			<tr>
-			    
-				<td>用户名</td> <!-- 东软实训   使用jsp当 用户为空时，不显示这一栏-->
-				<td><a href="#">登陆</a></td><!-- 通过<forwd>跳转到登陆 --><td width="12"></td>
-				<td><a href="#">个人资料</a></td><!-- 将请求提交到servlet 提交用户的信息 --><td width="12"></td>
-				<td><a href="#">我的订单</a></td><!-- 通过a将请求发送到servlet 提交用户的信息和购物车内容 --><td width="12"></td>
-				<td><a href="#"><img src="image/che.png" height="30"></a></td>
-				<td width="776"></td>
-				<td><a href="#">退出</a></td><!-- 将请求提交到首页面刷新首页面 -->	
-			</tr>
-		</table>
-</div>
+<header class="tou">
+    <nav>
+            <ul>
+            	<!-- 东软实训   使用jsp当 用户为空时，不显示这一栏-->
+            	<li><a href="#">登陆</a></li><!-- 通过<forwd>跳转到登陆 -->
+            	<li><a href="#">个人资料</a></li><!-- 将请求提交到servlet 提交用户的信息 -->
+            	<li><a href="#">我的订单</a></li><!-- 通过a将请求发送到servlet 提交用户的信息和购物车内容 -->
+            	<li><a href="#"><img src="image/che.png" height="30"></a></li>
+            	<li><a href="#">退出</a></li><!-- 将请求提交到首页面刷新首页面 -->	
+            </ul>
+	</nav>	
+	<section>
+	<!--1-->
 
-<div class="header"><!--2-->
-	<div><!--1-->
-		<div class="Logo">
-	     <img alt="logo" src="image/Logo.png" width="150" height="170"/>
-	</div>
-
-	<div class="c">
-	    <div class="search">
-	    <div class="search1">
+	<div class="c search search1">
+	    
 	    <form action="" >
-	    	<input type="text" value="请输入搜索名称" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入搜索名称';}">
+	    	<input type="search" value="请输入搜索名称" results=s onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入搜索名称'; }" ><!--聚焦-->
 			  <input type="submit" value="">
 		</form>
-	    </div>
-	     </div>
+	    
 	</div>
-	</div><!--1-->
-</div><!--2-->
+	<!--1-->
+	</section>	
+</header>
 
-<!-- 代码开始 -->
+<article><!--2-->
+	<!-- 代码开始 -->
 	<!--导航 Start-->
 	<div class="bo"><!--3-->
 	<div class="menu"><!--4-->
 		<div class="all-sort"><h2><a href="">全部商品分类</a></h2></div>
-		<div class="ad">
-			<a href="">
-				<img src="image/rBEhVlJEA84IAAAAAAAZY9Mm2-UAADmFQNaVy4AABl7123.jpg" width="141" height="40" />
-			</a>
-		</div>
+		
 		<div class="nav">
 			<ul class="clearfix">
 				<li><a href="#" class="current">首页</a></li>
@@ -493,83 +482,86 @@
 
 
 <!-- 代码结束 -->
+<article><!--2-->
+
+
 
 <div class="g"><!--6-->
     <section class="st-detail">
             <ul class="clearfix1">
                 <li>
-                    <a href="detail.html">
+                    <a href="#">
                         <img src="image/ab8.jpg" width="230px" height="350px"></a>
-                    <a href="">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
+                    <a href="#">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
                     <p class="price">￥288.00</p>
-                    <p><a href="" class="comment">已有8888人评论</a></p>
-                    <a href="car.html" class="st-term">加入购物车</a>
-                    <a href="pay.html" class="st-term1">立即购买</a>
+                    <p><a href="#" class="comment">已有8888人评论</a></p>
+                    <a href="#" class="st-term">加入购物车</a>
+                    <a href="#" class="st-term1">立即购买</a>
                 </li>
                 <li>
-                    <a href="detail.html">
+                    <a href="#">
                         <img src="image/ab8.jpg" width="230px" height="350px"></a>
-                    <a href="">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
+                    <a href="#">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
                     <p class="price">￥288.00</p>
-                    <p><a href="" class="comment">已有8888人评论</a></p>
-                    <a href="car.html" class="st-term">加入购物车</a>
-                    <a href="pay.html" class="st-term1">立即购买</a>
+                    <p><a href="#" class="comment">已有8888人评论</a></p>
+                    <a href="#" class="st-term">加入购物车</a>
+                    <a href="#" class="st-term1">立即购买</a>
                 </li>
 
                 <li>
-                    <a href="detail.html">
+                    <a href="#">
                         <img src="image/ab8.jpg" width="230px" height="350px"></a>
-                    <a href="">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
+                    <a href="#">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
                     <p class="price">￥288.00</p>
-                    <p><a href="" class="comment">已有8888人评论</a></p>
-                    <a href="car.html" class="st-term">加入购物车</a>
-                    <a href="pay.html" class="st-term1">立即购买</a>
+                    <p><a href="#" class="comment">已有8888人评论</a></p>
+                    <a href="#" class="st-term">加入购物车</a>
+                    <a href="#" class="st-term1">立即购买</a>
                 </li>
 
                  <li>
-                    <a href="detail.html">
+                    <a href="#">
                         <img src="image/ab8.jpg" width="230px" height="350px"></a>
-                    <a href="">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
+                    <a href="#">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
                     <p class="price">￥288.00</p>
-                    <p><a href="" class="comment">已有8888人评论</a></p>
-                    <a href="car.html" class="st-term">加入购物车</a>
-                    <a href="pay.html" class="st-term1">立即购买</a>
+                    <p><a href="#" class="comment">已有8888人评论</a></p>
+                    <a href="#" class="st-term">加入购物车</a>
+                    <a href="#" class="st-term1">立即购买</a>
                 </li>
                 <li>
-                    <a href="detail.html">
+                    <a href="#">
                         <img src="image/ab8.jpg" width="230px" height="350px"></a>
-                    <a href="">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
+                    <a href="#">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
                     <p class="price">￥288.00</p>
                     <p><a href="" class="comment">已有8888人评论</a></p>
-                    <a href="car.html" class="st-term">加入购物车</a>
-                    <a href="pay.html" class="st-term1">立即购买</a>
+                    <a href="#" class="st-term">加入购物车</a>
+                    <a href="#" class="st-term1">立即购买</a>
                 </li>
                 <li>
-                    <a href="detail.html">
+                    <a href="#">
                         <img src="image/ab8.jpg" width="230px" height="350px"></a>
-                    <a href="">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
+                    <a href="#">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
                     <p class="price">￥288.00</p>
-                    <p><a href="" class="comment">已有8888人评论</a></p>
-                    <a href="car.html" class="st-term">加入购物车</a>
-                    <a href="pay.html" class="st-term1">立即购买</a>
+                    <p><a href="#" class="comment">已有8888人评论</a></p>
+                    <a href="#" class="st-term">加入购物车</a>
+                    <a href="#" class="st-term1">立即购买</a>
                 </li>
                 <li>
-                    <a href="detail.html">
+                    <a href="#">
                         <img src="image/ab8.jpg" width="230px" height="350px"></a>
-                    <a href="">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
+                    <a href="#">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
                     <p class="price">￥288.00</p>
-                    <p><a href="" class="comment">已有8888人评论</a></p>
-                    <a href="car.html" class="st-term">加入购物车</a>
-                    <a href="pay.html" class="st-term1">立即购买</a>
+                    <p><a href="#" class="comment">已有8888人评论</a></p>
+                    <a href="#" class="st-term">加入购物车</a>
+                    <a href="#" class="st-term1">立即购买</a>
                 </li>
                 <li>
-                    <a href="detail.html">
+                    <a href="#">
                         <img src="image/ab8.jpg" width="230px" height="350px"></a>
-                    <a href="">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
+                    <a href="#">2016新款韩国代购韩版春装新款 宽松中长款显瘦春秋外套风衣 女</a>
                     <p class="price">￥288.00</p>
-                    <p><a href="" class="comment">已有8888人评论</a></p>
-                    <a href="car.html" class="st-term">加入购物车</a>
-                    <a href="pay.html" class="st-term1">立即购买</a>
+                    <p><a href="#" class="comment">已有8888人评论</a></p>
+                    <a href="#" class="st-term">加入购物车</a>
+                    <a href="#" class="st-term1">立即购买</a>
                 </li>
             </ul>
         </section>
